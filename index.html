@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div></div>
+    <div id="header">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar">
+                <span class="logo"><i style="font-style: normal;  color: rgb(122, 50, 50)">H</i>eet</span>
+                <ul id="sidemenuBar">
+                    <i class="fa-solid fa-xmark" style="font-size: 22px;" onclick="closeMenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" style="font-size: 22px;" onclick="openMenu()"></i>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hi, I'm <br>Heet Pandya</h1>
+                <span>Frontend Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about" class="main-container">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="design-1701530657026.png" alt="user-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title about-title">About Me</h1>
+                    <span class="about-para">
+                        Hello, I'm Heet Pandya, and I've recently graduated in electronics. My
+                        passion lies in the world of frontend development, and I've worked hard to build my skill set.
+                        I'm well-versed in HTML, CSS, JavaScript, Bootstrap, and ReactJS, which has allowed me to create
+                        interactive and visually appealing web interfaces.I'm excited to continue my journey in frontend
+                        development and contribute to the ever-evolving digital landscape. My ultimate goal is to become
+                        a full-stack developer, expanding my expertise to encompass both frontend and backend
+                        development.
+                    </span>
+
+                    <div class="about-detail">
+                        <span class="detail-title active-link" onclick="openAboutDetailContent('skills')">Skills</span>
+                        <span class="detail-title" onclick="openAboutDetailContent('experience')">Experience</span>
+                        <span class="detail-title" onclick="openAboutDetailContent('education')">Education</span>
+                    </div>
+
+                    <div class="about-detail-content active-content" id="skills">
+                        <ul>
+                            <li><span>Langauge Known:</span><br>C & C++ Programming, JavaScript, NodeJS</li>
+                            <li><span>Web Technologies:</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Learning:</span><br>ReactJS, NodeJS, Java</li>
+                            <li><span>Strong Skills:</span><br>HTML, CSS, JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-detail-content" id="experience">
+                        <ul>
+                            <li>Fresher</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-detail-content" id="education">
+                        <ul>
+                            <li><span>2020:</span><br>SSC from Maharashtra State Board</li>
+                            <li><span>2022:</span><br>HSC from Maharastra State Board</li>
+                            <li><span>2023:</span><br>Currently completing Degree in Bachelor's of Computer Science from Mumbai University</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- project section -->
+    <div id="project" class="main-container">
+        <div class="project-container">
+            <h1 class="title project-title">My Projects</h1>
+
+            <div class="project-lists">
+                <div class="projects">
+                    <img src="amazon img.webp" alt="img">
+
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>Real Time Clone of Amazon Website</p>
+                        <a href="https://heet-pandya.github.io/Amazon-clone/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <img src="image.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Image Gallery</h3>
+                        <p>Responsive Image Gallery</p>
+                        <a href="https://heet-pandya.github.io/imagegallery/"><i  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <img src="tic tac toe.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Fun Tic Tac Toe game using JavaScript</p>
+                        <a href="https://heet-pandya.github.io/Tic-Tac-Toe/"><i  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn see-more-btn" onclick="seeMoreProject()">See More</button>
+        </div>
+    </div>
+
+
+    <!-- contact section -->
+    <div id="contact" class="main-container">
+        <div class="contact-container">
+            <h1 class="title contact-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-col-left">
+                    <p><i class="fa-solid fa-envelope"></i>heetshaileshpandya@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8452016415</p>
+
+                    <div class="social-media-icon">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="" download class="btn download-cv-btn btn-2">Download CV</a>
+                </div>
+
+                <div class="contact-col-right">
+                    <form>
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+
+                        <input type="text" name="Email" id="" placeholder="Your Email"  required>
+
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                        <button class="btn submit-btn btn-2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume" class="main-container">
+        <div class="resume-container">
+            <h1 class="title resume-title">RESUME</h1>
+            <h1 class="title sub-title">Heet Shailesh Pandya</h1>
+            <hr class="hrTag">
+            <span>👋I'm a Frontend developer</span>
+            <div class="resume-row row1">
+                <div class="resume-contact">
+                    <p><i class="fa-solid fa-phone"></i>+91 8452016415</p>
+                    <p><i class="fa-solid fa-envelope"></i>heetshaileshpandya@gmail.com</p>
+                </div>
+                <div class="site-link" style="margin-top: 10px;">
+                    <a href="">LinkedIn</a>
+                    <a href="">GitHub</a>
+                    <a href="">Instagram</a>
+                </div>
+                <p class="resume-para">I'm well-versed in HTML, CSS, JavaScript, Bootstrap, and ReactJS, which has
+                    allowed me to create interactive and visually appealing web interfaces.I'm excited to continue my
+                    journey in frontend development and contribute to the ever-evolving digital landscape.</p>
+            </div>
+            <hr class="hrTag">
+
+            <div class="resume-row row2">
+                <h1 class="title sub-title">Education</h1>
+                <table style="width: 100%; margin-top: 10px;" >
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institue</th>
+                        <th>Year of passing</th>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Computer Science</td>
+                        <td>PVG College of Science and Technology</td>
+                        <td style="text-align: center;">2022</td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>K.J. Somaiya JR. College of Science and Technology</td>
+                        <td style="text-align: center;">2022</td>
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td>Maharashtra State Board</td>
+                        <td style="text-align: center;">2020</td>
+                    </tr>
+                </table>
+            </div>
+            <hr class="hrTag">
+
+            <div class="resume-row row3">
+                <h1 class="title sub-title">Skills:</h1>
+                <table style="width: 100%; margin-top: 10px;">
+                    <tr>
+                        <td style="font-weight: bold;">Language</td>
+                        <td>JavaScript, C & C++ Programming</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Web Technologies</td>
+                        <td>HTML, CSS, JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Learning</td>
+                        <td>ReactJS, NodeJS, Java</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Strong Skills</td>
+                        <td>HTML, CSS, JavaScript</td>
+                    </tr>
+                </table>
+            </div>
+            <hr class="hrTag">
+            <a href="" download class="btn download-cv-btn btn-2" style="margin: 15px 0px;">Download CV</a>
+        </div>
+    </div>
+    
+    <!-- footer section -->
+    <div id="footer" class="main-container">
+        <footer>
+            <span>Copyright © 2023. Made by Heet Pandya</span>
+        </footer>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
